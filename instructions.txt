@@ -1,0 +1,41 @@
+Thank you for giving me the opportunity to participate on the programming test
+
+NodeJS Dependencies:
+---------------
+ - Express
+ - Cors
+ - multer
+ - csv-parse
+ 
+React Dependencies:
+-------------------
+ - axios
+ - react
+ - react-dom
+ - react-dropzone
+ - react-router-dom
+ 
+For the backend API
+------------------
+1. going to blablabla/bookings using GET should fetch all the existing bookings as a JSON
+2. going to blablabla/booking using POST with the following params should add a new booking
+   Param: { booking: {}, checkOverlap: true/false }
+   Returns: 
+   	success > { status: true, bookings: Array of all bookings in the system }
+   	with overlapped booking found > {  booking: the booking that we are trying to add, existing: list of existing bookings that overlapping } 
+3. going to blablabla/upload will accept a .csv file with booking info.
+   Returns: { clear: [booking(added from the flie)], overlaped: [{file_entry: the file entry object db_entry: the db entry that is overlapping}] }
+
+Notes:
+----------
+1. The email will have an attached zip file containing all the codes
+2. For backup incase the attached code doesn't work, I have also implemented the solution on an online sandbox environment called Code Sandbox.
+	- The URL for the backend codebase (nodejs) can be accssed using https://codesandbox.io/s/restless-fog-fipho
+	- The URL for the frontend codebase (reactjs) can be accessed using https://codesandbox.io/s/adoring-fire-gpjn6
+	
+3. CSS needs working to make the interface look better
+4. I have used React Router Dom for routing on react side
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+I have done most of my work working on two different sandboxes (one for backend/nodejs and one for frontend/react) on codesandbox(URLs above).
+The solution is no where near perfect. But I have tried to cover all the basic functionalities (file upload and parse, adding, fetching and displaying)
